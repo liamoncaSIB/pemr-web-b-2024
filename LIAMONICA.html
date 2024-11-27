@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Aplikasi Rekening Perorangan</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    background: #fff;
+    border: 1px solid #007BFF; /* Blue border */
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    height: 50px;
+}
+
+.header h1 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    color: #007BFF; /* Blue text */
+}
+
+.small-box {
+    width: 60px; /* Width of the small box */
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #007BFF; /* Blue border */
+    border-radius: 4px;
+    background-color: #E9F3FF; /* Light blue background */
+    color: #333; /* Dark text color for contrast */
+}
+
+h2 {
+    text-align: center;
+    color: #007BFF; /* Blue text */
+    margin-bottom: 20px;
+}
+
+.section-title {
+    background: #007BFF; /* Blue background */
+    color: #fff; /* White text */
+    padding: 8px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.form-grid label {
+    font-size: 12px;
+    color: #007BFF; /* Blue text */
+    align-self: center;
+}
+
+.form-grid input[type="text"],
+.form-grid input[type="number"],
+.form-grid input[type="date"],
+.form-grid select {
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+    border: 1px solid #007BFF; /* Blue border */
+    border-radius: 4px;
+    background-color: #E9F3FF; /* Light blue background */
+    color: #333; /* Dark text color for contrast */
+}
+
+.full-width {
+    grid-column: span 4;
+}
+
+.half-width {
+    grid-column: span 2;
+}
+
+.quarter-width {
+    grid-column: span 1;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.checkbox-group label, .radio-group label {
+    margin: 0;
+    color: #007BFF; /* Blue text */
+}
+
+.section-space {
+    margin-top: 30px;
+}
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <!-- Header with logo and title -->
+    <div class="header">
+        <img src="BRI.png" alt="Bank BRI">
+        <h1>Formulir Aplikasi Rekening Perorangan (AR-01)</h1>
+    </div>
+
+<div class="cif-section">
+    <label for="cif">CIF:</label>
+    <div class="form-grid">
+        <input type="text" id="cif1" name="cif1" class="small-box" />
+        <input type="text" id="cif2" name="cif2" class="small-box" />
+        <input type="text" id="cif3" name="cif3" class="small-box" />
+        <input type="text" id="cif4" name="cif4" class="small-box" />
+        <input type="text" id="cif5" name="cif5" class="small-box" />
+        <input type="text" id="cif6" name="cif6" class="small-box" />
+        <input type="text" id="cif7" name="cif7" class="small-box" />
+        <input type="text" id="cif8" name="cif8" class="small-box" />
+    </div>
+</div>
+
+
+
+    <div class="section-title">1. Data Nasabah - Data Pribadi</div>
+    <div class="form-grid">
+        <label>Jenis Kelamin:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender"> Pria</label>
+            <label><input type="radio" name="gender"> Wanita</label>
+        </div>
+        <label>Status:</label>
+        <select>
+            <option>WNI</option>
+            <option>WNA</option>
+        </select>
+        <label>Nama Lengkap:</label>
+        <input type="text" class="full-width">
+
+        <label>Tempat Lahir:</label>
+        <input type="text">
+        <label>Tanggal Lahir:</label>
+        <input type="date">
+
+        <label>Jenis Identitas:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="id_type"> KTP</label>
+            <label><input type="radio" name="id_type"> SIM</label>
+            <label><input type="radio" name="id_type"> Paspor</label>
+        </div>
+        <label>Nomor Identitas:</label>
+        <input type="text" class="full-width">
+
+        <label>Alamat Domisili:</label>
+        <input type="text" class="full-width">
+
+        <label>RT/RW:</label>
+        <input type="text" class="quarter-width">
+        <label>Kelurahan/Desa:</label>
+        <input type="text" class="half-width">
+        <label>Kecamatan:</label>
+        <input type="text" class="half-width">
+
+        <label>Kode Pos:</label>
+        <input type="text" class="quarter-width">
+        <label>Kota:</label>
+        <input type="text" class="half-width">
+        
+        <label>Telepon:</label>
+        <input type="text">
+        <label>Handphone:</label>
+        <input type="text">
+        <label>Email:</label>
+        <input type="text" class="full-width">
+    </div>
+
+    <div class="section-title section-space">Data Pekerjaan</div>
+    <div class="form-grid">
+        <label>Jenis Pekerjaan:</label>
+        <select class="full-width">
+            <option>PNS</option>
+            <option>Swasta</option>
+            <option>Wiraswasta</option>
+            <option>Lainnya</option>
+        </select>
+
+        <label>Nama Kantor/Tempat Bekerja:</label>
+        <input type="text" class="full-width">
+
+        <label>Jabatan:</label>
+        <input type="text">
+        <label>NPWP Nasabah:</label>
+        <input type="text" class="half-width">
+
+        <label>Alamat Kantor/Tempat Bekerja:</label>
+        <input type="text" class="full-width">
+
+        <label>RT/RW:</label>
+        <input type="text" class="quarter-width">
+        <label>Kelurahan/Desa:</label>
+        <input type="text" class="half-width">
+        <label>Kecamatan:</label>
+        <input type="text" class="half-width">
+
+        <label>Kode Pos:</label>
+        <input type="text" class="quarter-width">
+        <label>Kota:</label>
+        <input type="text" class="half-width">
+
+        <label>Telepon:</label>
+        <input type="text">
+        <label>Faksimili:</label>
+        <input type="text">
+    </div>
+
+    <div class="section-title section-space">Alamat Surat Menyurat</div>
+    <div class="form-grid">
+        <label>Alamat:</label>
+        <input type="text" class="full-width">
+
+        <label>RT/RW:</label>
+        <input type="text" class="quarter-width">
+        <label>Kelurahan/Desa:</label>
+        <input type="text" class="half-width">
+        <label>Kecamatan:</label>
+        <input type="text" class="half-width">
+
+        <label>Kode Pos:</label>
+        <input type="text" class="quarter-width">
+        <label>Kota:</label>
+        <input type="text" class="half-width">
+    </div>
+
+    <div class="section-title section-space">Data Keuangan</div>
+    <div class="form-grid">
+        <label>Penghasilan per Bulan:</label>
+        <select class="full-width">
+            <option>&lt;5 juta</option>
+            <option>5-10 juta</option>
+            <option>10-50 juta</option>
+            <option>50-100 juta</option>
+            <option>&gt;100 juta</option>
+        </select>
+
+        <label>Sumber Penghasilan:</label>
+        <select class="full-width">
+            <option>Gaji</option>
+            <option>Usaha</option>
+            <option>Investasi</option>
+        </select>
+
+        <label>Jenis Tabungan di Bank Lain:</label>
+        <select class="full-width">
+            <option>Deposito</option>
+            <option>Giro</option>
+            <option>Tabungan</option>
+            <option>Lainnya</option>
+        </select>
+
+        <label>Kartu Kredit:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Silver</label>
+            <label><input type="checkbox"> Gold</label>
+            <label><input type="checkbox"> Platinum</label>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
