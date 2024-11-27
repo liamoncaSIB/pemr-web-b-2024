@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borcelle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+nav ul li a.active {
+  color: #b38b6d;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #333;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.shop-now {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b38b6d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.shop-now:hover {
+  background-color: #a0755a;
+}
+
+.hero-image img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 50px;
+  gap: 20px;
+}
+
+.products img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+</style>
+<body>
+  <header>
+    <div class="logo">BORCELLE</div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Clean.<br>Moisture.<br>Care.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" class="shop-now">SHOP NOW</a>
+      </div>
+      <div class="hero-image">
+        <img src="basket.jpg" alt="Soap and basket">
+      </div>
+    </section>
+
+    <section class="products">
+      <img src="product1.jpg" alt="Product 1">
+      <img src="product2.jpg" alt="Product 2">
+      <img src="product3.jpeg" alt="Product 3">
+    </section>
+  </main>
+</body>
+</html>
